@@ -1,0 +1,22 @@
+{
+  "name": "@torinel/girokonto-tools",
+  "version": "0.1.0",
+  "description": "Open tool logic behind Torinel's German Girokonto switching and cancellation workflows.",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "exports": {
+    "./iban": "./src/iban/index.ts",
+    "./blz": "./src/blz/index.ts",
+    "./wechsel": "./src/wechsel/index.ts",
+    "./kuendigung": "./src/kuendigung/index.ts"
+  }
+}
